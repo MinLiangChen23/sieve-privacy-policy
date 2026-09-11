@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Sieve</title>
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #ffffff;
+    --fg: #1f2933;
+    --muted: #5c6b7a;
+    --rule: #e3e8ee;
+    --accent: #1e6fd9;
+    --panel: #f7f9fc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --bg: #14181d;
+      --fg: #dfe6ee;
+      --muted: #93a1b0;
+      --rule: #2a323b;
+      --accent: #6aa9f0;
+      --panel: #1b2027;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 20px 80px;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 760px; margin: 0 auto; }
+  header {
+    padding: 56px 0 24px;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 32px;
+  }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 8px; letter-spacing: -0.02em; }
+  h2 {
+    font-size: 1.2rem;
+    margin: 44px 0 12px;
+    letter-spacing: -0.01em;
+  }
+  h3 { font-size: 1rem; margin: 26px 0 8px; }
+  .updated { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  p, li { color: var(--fg); }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); }
+  .callout {
+    background: var(--panel);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    padding: 16px 20px;
+    margin: 24px 0;
+  }
+  .callout p { margin: 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.94rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  th { font-weight: 600; color: var(--muted); font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.04em; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.88em;
+    background: var(--panel);
+    padding: 1px 5px;
+    border-radius: 4px;
+  }
+  .fill {
+    background: #fff3cd;
+    color: #7a5300;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+  @media (prefers-color-scheme: dark) {
+    .fill { background: #4a3a12; color: #ffd97a; }
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.88rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Sieve — Android application<br>Last updated: September 10, 2026</p>
+</header>
+
+<p>This Privacy Policy describes how the Sieve Android application ("Sieve", "the app", "we") handles your information. It applies to the Sieve app and nothing else.</p>
+
+<div class="callout">
+  <p><strong>The short version:</strong> Sieve does not collect, transmit, or sell your personal data. There are no user accounts, no advertising, and no analytics. Everything the app does — scanning, analysing, and deleting files — happens entirely on your device.</p>
+</div>
+
+<h2>1. Information We Do Not Collect</h2>
+
+<p>Sieve does not collect, request, or store any of the following:</p>
+
+<ul>
+  <li>Personal identifiers (name, email address, phone number, postal address)</li>
+  <li>Account credentials — the app has no account system and no sign-in</li>
+  <li>Your photos, videos, documents, or any other file content</li>
+  <li>File paths, file names, or metadata transmitted off your device</li>
+  <li>Your list of installed applications, transmitted off your device</li>
+  <li>Your notification content, transmitted off your device</li>
+  <li>Location data</li>
+  <li>Device identifiers, advertising IDs, or analytics identifiers</li>
+  <li>Crash reports or usage telemetry</li>
+</ul>
+
+<p>We operate no servers that receive data from the app. There is no backend, no database of users, and no analytics dashboard.</p>
+
+<h2>2. Permissions and What They Are Used For</h2>
+
+<p>Sieve requests permissions because its features require them. Each permission below is used only for the purpose stated, and only on your device.</p>
+
+<table>
+  <thead>
+    <tr><th>Permission</th><th>Why the app needs it</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>All files access<br><code>MANAGE_EXTERNAL_STORAGE</code></td>
+      <td>Required to scan your device storage for large files, duplicate photos, screenshots, and videos, and to delete the items you select. Without this access, the cleaning features cannot locate or remove files outside the app's own storage.</td>
+    </tr>
+    <tr>
+      <td>Storage read/write<br><code>READ_EXTERNAL_STORAGE</code><br><code>WRITE_EXTERNAL_STORAGE</code></td>
+      <td>The equivalent file access for Android 12 and earlier, where the permission above does not apply.</td>
+    </tr>
+    <tr>
+      <td>Usage access<br><code>PACKAGE_USAGE_STATS</code></td>
+      <td>Used by App Manager to show when you last opened each app, and by Network Traffic to show how much data each app has used over a selected period. This information is read and displayed on your device only.</td>
+    </tr>
+    <tr>
+      <td>Installed apps query</td>
+      <td>Used by App Manager to list the apps installed on your device so you can review and uninstall them. This is declared in the manifest and does not produce a runtime prompt.</td>
+    </tr>
+    <tr>
+      <td>Request delete packages<br><code>REQUEST_DELETE_PACKAGES</code></td>
+      <td>Used to open the system's own uninstall confirmation dialog when you choose to remove an app. Sieve cannot uninstall anything silently — the system always asks you to confirm.</td>
+    </tr>
+    <tr>
+      <td>Notifications<br><code>POST_NOTIFICATIONS</code></td>
+      <td>Used to send cleanup suggestions and to display the ongoing cleanup status notification. On Android 13 and later you are asked to grant this at runtime, and you can decline.</td>
+    </tr>
+    <tr>
+      <td>Notification access<br><code>BIND_NOTIFICATION_LISTENER_SERVICE</code></td>
+      <td>Used by Notification Cleaner to detect and clear incoming notifications according to your settings. This is an optional feature, off by default, and can be disabled at any time in Android Settings. Notification content is processed on your device and is never transmitted.</td>
+    </tr>
+    <tr>
+      <td>Foreground service<br><code>FOREGROUND_SERVICE</code><br><code>FOREGROUND_SERVICE_SPECIAL_USE</code></td>
+      <td>Used to keep the ongoing notification (cleanup status and network speed) visible while the feature is active. This is not used to perform work in the background for advertising or profiling purposes.</td>
+    </tr>
+    <tr>
+      <td>Run at startup<br><code>RECEIVE_BOOT_COMPLETED</code></td>
+      <td>Used to restore your cleanup reminders after the device restarts, if you have enabled them.</td>
+    </tr>
+    <tr>
+      <td>Network access<br><code>INTERNET</code><br><code>ACCESS_NETWORK_STATE</code></td>
+      <td>Used solely by the Network Test feature to measure your download speed, and to check whether a network connection is available. See section 4.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>You can revoke most of these permissions at any time through your device's Settings. Revoking a permission disables the related feature; the rest of the app continues to work.</p>
+
+<h2>3. Where Your Data Stays</h2>
+
+<p>All scanning, analysis, comparison, and deletion happens locally on your device.</p>
+
+<ul>
+  <li><strong>File content</strong> is never read for any purpose other than identifying duplicates (using byte-level comparison and cryptographic hashing) and displaying previews. It is never copied off your device.</li>
+  <li><strong>Clean history</strong> — the record of how much space you have freed — is stored in the app's private storage on your device. It is never uploaded.</li>
+  <li><strong>App settings</strong> (dark mode, excluded folders, notification preferences, per-app notification rules) are stored on your device using Android's DataStore and a local database.</li>
+  <li><strong>Deleted files are permanently deleted.</strong> Sieve does not keep a copy, and deletion cannot be undone. The app always asks you to confirm before deleting anything.</li>
+</ul>
+
+<p>Uninstalling the app removes its local data from your device.</p>
+
+<h2>4. Network Activity</h2>
+
+<p>Sieve connects to the internet for exactly one purpose: the Network Test feature.</p>
+
+<p>When you run a network test, the app downloads data from a public speed-test endpoint operated by Cloudflare, Inc. (<code>speed.cloudflare.com</code>) to measure your connection speed. The request contains no personal information, no device identifier, and no data about your files or apps. The result (a speed figure) is calculated and displayed on your device.</p>
+
+<p>As with any internet request, the server you connect to can see the IP address your request originates from. This is inherent to how the internet works and is not something Sieve collects or has access to. Cloudflare's handling of that connection is governed by <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Cloudflare's own privacy policy</a>.</p>
+
+<p>If you never use Network Test, the app makes no network requests at all.</p>
+
+<h2>5. Third-Party Sharing</h2>
+
+<p>We do not share, sell, rent, or trade any information with third parties, because we do not collect any information to share.</p>
+
+<p>The app contains no third-party advertising SDKs, no analytics SDKs, no crash-reporting SDKs, and no attribution or tracking SDKs.</p>
+
+<h2>6. Advertising and Analytics</h2>
+
+<p>Sieve contains no advertising. There are no ad networks, no ad identifiers, no interest-based advertising, and no in-app tracking of any kind.</p>
+
+<p>Sieve contains no analytics. We do not measure how you use the app, which features you open, or how often you open it.</p>
+
+<h2>7. Children's Privacy</h2>
+
+<p>Sieve is a general-purpose utility and is not directed at children. Because the app collects no personal information from anyone, it collects no personal information from children. We do not knowingly collect data from children under 13 (or the applicable age in your jurisdiction).</p>
+
+<h2>8. Your Choices and Data Deletion</h2>
+
+<p>Because Sieve does not collect or store data on any server, there is no server-side data to request, export, or delete. You retain full control of everything the app touches:</p>
+
+<ul>
+  <li><strong>Permissions</strong> — grant or revoke any permission at any time in Android Settings.</li>
+  <li><strong>App data</strong> — clear the app's local data (clean history, settings, excluded folders) through Android Settings → Apps → Sieve → Storage → Clear data.</li>
+  <li><strong>Everything</strong> — uninstalling the app removes all of its local data from your device.</li>
+  <li><strong>Notification access</strong> — disable it in Android Settings → Notifications → Device &amp; app notifications → Sieve, or turn off auto-clean inside the app.</li>
+</ul>
+
+<h2>9. Security</h2>
+
+<p>Sieve holds no user data on any server, so there is no remote database to breach. Locally, the app relies on Android's application sandbox to keep its stored settings and history private to the app. The one network request the app makes (the speed test) uses HTTPS.</p>
+
+<h2>10. Changes to This Policy</h2>
+
+<p>If this policy changes, the revised version will be published at this address with an updated "Last updated" date. Material changes will also be noted in the app's release notes on Google Play. Continued use of the app after a change takes effect constitutes acceptance of the revised policy.</p>
+
+<h2>11. Contact Us</h2>
+
+<p>If you have questions about this policy or about how Sieve handles your information, contact us at:</p>
+
+<p><strong>Email:</strong> <span class="fill">YOUR-CONTACT-EMAIL-HERE</span></p>
+
+<p>We aim to respond within 7 days.</p>
+
+<footer>
+  <p>This policy applies to the Sieve Android application (package <code>com.blazeclean.app</code>).<br>
+  Last updated: September 10, 2026.</p>
+</footer>
+
+</main>
+</body>
+</html>
